@@ -1,0 +1,28 @@
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	d = diff
+	dt = difftool
+	st = status
+[color]
+	diff = true
+	ui = auto
+[core]
+	editor = nvim
+	pager = less -F -X
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[push]
+	default = simple
