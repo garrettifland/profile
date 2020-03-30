@@ -23,7 +23,7 @@ If any of the following files exist, be sure to back them up before proceeding:
 .zshrc
 ```
 
-Initialize your profile with the following:
+Initialize your profile with the following (in your home directory):
 
 ```bash
 git init
